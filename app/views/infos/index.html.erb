@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+<h1>Infos#Index</h1>
+
+<h3><% @source.name %></h3>
+<div id="infos">
+  <% @infos.each do |info| %>
+    <%= render info %>
+    <p>
+      <%= link_to "Montrer Source", [@source] %>
+      <%= button_to "Supprimer cette info", [info.source, info], method: :delete %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Nouvelle info", new_source_info_path(@source) %>
+<%= link_to "Retour aux Sources", root_path %>
+
+

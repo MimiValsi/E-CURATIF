@@ -1,0 +1,30 @@
+<header>
+<h1 class="info">Editer l'info</h1>
+<%= image_tag('logo_sf.PNG', width: '300px', class:'position-absolute top-0 start-0') %>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <%= link_to "Sources",  root_path, class:"navbar-brand" %> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "Annuler", [@source, @info], class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Retour", source_path(@source), class:"nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<%= render "form", info: @info %>
+
+<br>
+
+<div>
+  <%# link_to "Montrer cette info", [@source, @info] %> 
+  <%# link_to "Retour", source_path(@source) %>
+</div>

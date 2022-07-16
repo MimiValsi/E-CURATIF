@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import "bootstrap";
+
+.button-g { // Green button
+	display: inline-block;
+        background-color: #46e30d;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        //color: #000000;
+        text-align: center;
+        font-size: 28px;
+        padding: 50px;
+        width: 296px;
+        //-webkit-transition: all 0.5s;
+        //-moz-transition: all 0.5s;
+        //-o-transition: all 0.5s;
+        //transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+}
+
+.button-y { // Yellow button
+ 	display: inline-block;
+        background-color: #fff808;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        //color: #000000;
+        text-align: center;
+        font-size: 28px;
+        padding: 50px;
+        width: 296px;
+        //-webkit-transition: all 0.5s;
+        //-moz-transition: all 0.5s;
+        //-o-transition: all 0.5s;
+        //transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+} 
+.button-o{ // Orange button
+	display: inline-block;
+        background-color: #e3780d;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        //color: #000000;
+        text-align: center;
+        font-size: 28px;
+        padding: 50px;
+        width: 296px;
+        //-webkit-transition: all 0.5s;
+        //-moz-transition: all 0.5s;
+        //-o-transition: all 0.5s;
+        //transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+}
+
+.button-r { // Red button
+	//background-color: #1c87c9;
+	-webkit-border-radius: 60px;
+	border-radius: 10px;
+	border: 4px double #cccccc;
+	//color: #eeeeee;
+	cursor: pointer;
+	display: inline-block;
+	//font-family: sans-serif;
+	font-size: 28px;
+	padding: 50px;
+	width: 296px;
+	text-align: center;
+ 	//text-decoration: none;
+	//-webkit-transition: all 0.5s;
+	//-moz-transition: all 0.5s;
+	//-o-transition: all 0.5s;
+	margin: 5px;
+	//transition: all 0.5s;
+	animation: glowing 1300ms infinite;
+	
+}
+@keyframes glowing {
+        0% {
+                background-color: #a80505;
+	        box-shadow: 0 0 3px #a80505;
+	}
+	50% {
+	        background-color: #eb0a0a;
+	        box-shadow: 0 0 10px #eb0a0a;
+	}
+	100% {
+	        background-color: #a80505;
+	        box-shadow: 0 0 3px #a80505;
+	}
+}
+
+html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+}
+
+body {
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0) );
+}
+
+.qt-poste { // Total infos per source
+        position: absolute;
+        top: 15%;
+        left: 10px;
+        color: #22ff99;
+}
+
+.info {
+        color: #22ff99 !important;
+}
+
+.rcorner {
+        //position: flex;
+        border-radius: 50px 25px;
+        border: 2px solid #73ad21;
+        //width: 550px;
+        //height: 630px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        color: #22ff99;
+        //flex-wrap: wrap;
+        background: linear-gradient(to bottom right, rgba(101, 101, 255, 1), rgba(255, 255, 255, 0));
+        
+}
+
+header {
+        color: #22ff99;
+}

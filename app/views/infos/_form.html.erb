@@ -1,0 +1,89 @@
+<%= form_with(model: [@source, info]) do |form| %>
+  <% if info.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(info.errors.count, "error") %> prohibited this info from being saved:</h2>
+
+      <ul>
+        <% info.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="info">
+  <div>
+    <%= form.label :agent, style: "display: block" %>
+    <%= form.text_field :agent %>
+  </div>
+
+  <div>
+    <%= form.label :event, style: "display: block" %>
+    <%= form.text_field :event %>
+  </div>
+
+  <div>
+    <%= form.label :ouvrage, style: "display: block" %>
+    <%= form.text_field :ouvrage %>
+  </div>
+
+  <div>
+    <%= form.label :priority, style: "display: block" %>
+    <%= form.number_field :priority %>
+  </div>
+
+  <div>
+    <%= form.label :target, style: "display: block" %>
+    <%= form.date_field :target %>
+  </div>
+
+  <div>
+    <%= form.label :detail, style: "display: block" %>
+    <%= form.text_area :detail %>
+  </div>
+
+  <div>
+    <%= form.label :devis, style: "display: block" %>
+    <%= form.text_field :devis %>
+  </div>
+
+  <div>
+    <%= form.label :brips, style: "display: block" %>
+    <%= form.text_field :brips %>
+  </div>
+
+  <div>
+    <%= form.label :oups, style: "display: block" %>
+    <%= form.text_field :oups %>
+  </div>
+
+  <div>
+    <%= form.label :ameps, style: "display: block" %>
+    <%= form.text_field :ameps %>
+  </div>
+
+  <div>
+    <%= form.label :ais, style: "display: block" %>
+    <%= form.text_field :ais %>
+  </div>
+
+  <div>
+    <%= form.label :rte, style: "display: block" %>
+    <%= form.text_field :rte %>
+  </div>
+
+  <div>
+    <%= form.label :status %>
+    <%= form.select :status, ['valide', 'archived'], selected: 'valide' %>
+  </div>
+
+  <div>
+    <%# form.label :source_id, style: "display: block" %>
+    <%# form.text_field :source_id %>
+  </div>
+
+  <div>
+    <br>
+    <%= form.submit "Créer Info", :class => "btn btn-success" %>
+  </div>
+</div>
+<% end %>

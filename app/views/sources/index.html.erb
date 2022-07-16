@@ -1,0 +1,47 @@
+<header>
+<%= image_tag('logo_sf.PNG', width: '300px', 
+              class:'position-absolute top-0 start-0') %>
+</header>
+<p style="color: green"><%= notice %></p>
+<%# link_to "New source", new_source_path %>
+
+
+
+<%#---------------------------- test ----------------------------- %>
+
+<div class="qt-poste">
+  <p><% s = Source.find( 1) %><%= s.name %>: <%= qt = Info.where(source_id:  1).size  %></p>
+  <p><% s = Source.find( 2) %><%= s.name %>: <%= qt = Info.where(source_id:  2).size  %></p>
+  <p><% s = Source.find( 3) %><%= s.name %>: <%= qt = Info.where(source_id:  3).size  %></p>
+  <p><% s = Source.find( 4) %><%= s.name %>: <%= qt = Info.where(source_id:  4).size  %></p>
+  <p><% s = Source.find( 5) %><%= s.name %>: <%= qt = Info.where(source_id:  5).size  %></p>
+  <p><% s = Source.find( 6) %><%= s.name %>: <%= qt = Info.where(source_id:  6).size  %></p>
+  <p><% s = Source.find( 7) %><%= s.name %>: <%= qt = Info.where(source_id:  7).size  %></p>
+  <p><% s = Source.find( 8) %><%= s.name %>: <%= qt = Info.where(source_id:  8).size  %></p>
+  <p><% s = Source.find( 9) %><%= s.name %>: <%= qt = Info.where(source_id:  9).size  %></p>
+  <p><% s = Source.find(10) %><%= s.name %>: <%= qt = Info.where(source_id: 10).size  %></p>
+  <p><% s = Source.find(11) %><%= s.name %>: <%= qt = Info.where(source_id: 11).size  %></p>
+  <p><% s = Source.find(12) %><%= s.name %>: <%= qt = Info.where(source_id: 12).size  %></p>
+  <p><% s = Source.find(13) %><%= s.name %>: <%= qt = Info.where(source_id: 13).size  %></p>
+  <p><% s = Source.find(14) %><%= s.name %>: <%= qt = Info.where(source_id: 14).size  %></p>
+  <p><% s = Source.find(15) %><%= s.name %>: <%= qt = Info.where(source_id: 15).size  %></p>
+  <p><% s = Source.find(16) %><%= s.name %>: <%= qt = Info.where(source_id: 16).size  %></p>
+</div>
+
+
+
+<%= render "index", source: @source %>
+
+<button class="button-g float-start">Test visu</button> 
+<button class="button-y float-start">Test visu</button>   
+<button class="button-o float-start">Test visu</button> 
+<button class="button-r float-start">Test visu</button> 
+
+<%# ------------------------- TODO -------------------------------%>
+
+<%# VERT = 0, JAUNE > 0 && < 5, ORANGE > 5 && < 10, ROUGE > 10, 
+VOIR ONGLET OUPS POUR VISITE POSTE, 
+Rajouter emplacement pour photos dans création/update%>   
+
+
+  

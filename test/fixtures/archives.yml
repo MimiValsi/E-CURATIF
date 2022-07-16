@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  agent: MyString
+  event: MyString
+  ouvrage: MyString
+  priority: MyString
+  target: 2022-06-09
+  rte: MyString
+  detail: MyText
+  devis: MyString
+  brips: MyString
+  oups: MyString
+  ameps: MyString
+  ais: MyString
+  status: MyString
+  source: one
+
+two:
+  agent: MyString
+  event: MyString
+  ouvrage: MyString
+  priority: MyString
+  target: 2022-06-09
+  rte: MyString
+  detail: MyText
+  devis: MyString
+  brips: MyString
+  oups: MyString
+  ameps: MyString
+  ais: MyString
+  status: MyString
+  source: two

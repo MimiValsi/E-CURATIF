@@ -1,0 +1,38 @@
+<!-- 
+<h1 style="color: green">Source#Show</h1> <%#A supprimer %> -->
+<p style="color: green"><%= notice %></p>
+<%= image_tag('logo_sf.PNG', width: '300px', class:'position-absolute top-0 start-0') %>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <%= link_to "Sources",  root_path, class:"navbar-brand" %> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "Nouvelle Info", new_source_info_path(@source), class:"nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<%= render @source %>
+
+<div>
+<% for info in @source.infos %>
+  <%# unless info.archived? %>
+    <%= button_to info.ouvrage, source_info_path(@source, info), class:"btn btn-info", :method => :get %>
+  <%# end %>
+<% end %>
+</div>
+
+<div>
+  <%# link_to "Edit this source", edit_source_path(@source) %> 
+  <%# link_to "Nouvelle info", new_source_info_path(@source) %>
+  <%# link_to "Voir les Info", source_infos_path(@source) %> 
+  <%# link_to "Retour aux sources", sources_path %>
+
+  <%# button_to "Destroy this source", @source, method: :delete %>
+</div>

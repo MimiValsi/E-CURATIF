@@ -1,0 +1,343 @@
+<%# -----  Alsace  ----- %>
+<% qt = Info.where(source_id: 1).count %>
+<% s = Source.find(1) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+
+
+<%# -----  Ampère  ----- %>
+<% qt = Info.where(source_id: 2).count %>
+<% s = Source.find(2) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Argenteuil  ----- %>
+<% qt = Info.where(source_id: 3).count %>
+<% s = Source.find(3) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+
+
+<%# -----  Bilancourt  ----- %>
+<% qt = Info.where(source_id: 4).count %>
+<% s = Source.find(4) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+
+
+<%# -----  Boule  ----- %>
+<% qt = Info.where(source_id: 5).count %>
+<% s = Source.find(5) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+
+<%# -----  Courbevoie  ----- %>
+<% qt = Info.where(source_id: 6).count %>
+<% s = Source.find(6) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+
+<%# -----  Danton  ----- %>
+<% qt = Info.where(source_id: 7).count %>
+<% s = Source.find(7) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  La Briche  ----- %>
+<% qt = Info.where(source_id: 8).count %>
+<% s = Source.find(8) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Levallois  ----- %>
+<% qt = Info.where(source_id: 9).count %>
+<% s = Source.find(9) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Menus  ----- %>
+<% qt = Info.where(source_id: 10).count %>
+<% s = Source.find(10) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Nanterre  ----- %>
+<% qt = Info.where(source_id: 11).count %>
+<% s = Source.find(11) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Novion  ----- %>
+<% qt = Info.where(source_id: 12).count %>
+<% s = Source.find(12) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Puteaux  ----- %>
+<% qt = Info.where(source_id: 13).count %>
+<% s = Source.find(13) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Rueil  ----- %>
+<% qt = Info.where(source_id: 14).count %>
+<% s = Source.find(14) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  St Ouen  ----- %>
+<% qt = Info.where(source_id: 15).count %>
+<% s = Source.find(15) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>
+
+<%# -----  Tilliers  ----- %>
+<% qt = Info.where(source_id: 16).count %>
+<% s = Source.find(16) %>
+
+<% if (qt == 0) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-g float-start", :method => :get %>
+
+<% elsif (qt >= 1 && qt < 5) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-y float-start", :method => :get %>
+
+<% elsif (qt >= 5 && qt < 10) %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-o float-start", :method => :get %>
+
+<% else %>
+  <% s %>
+    <%= button_to s.name, s, class:"button-r float-start", :method => :get %>
+<% end %>

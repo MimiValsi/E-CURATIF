@@ -1,0 +1,77 @@
+<div id="<%= dom_id archived %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Agent:</strong>
+    <%= archived.agent %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Event:</strong>
+    <%= archived.event %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ouvrage:</strong>
+    <%= archived.ouvrage %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Priority:</strong>
+    <%= archived.priority %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Target:</strong>
+    <%= archived.target %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Rte:</strong>
+    <%= archived.rte %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Detail:</strong>
+    <%= archived.detail %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Devis:</strong>
+    <%= archived.devis %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Brips:</strong>
+    <%= archived.brips %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Oups:</strong>
+    <%= archived.oups %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ameps:</strong>
+    <%= archived.ameps %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ais:</strong>
+    <%= archived.ais %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Source:</strong>
+    <%= archived.source_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Status:</strong>
+    <%= archived.status %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this archived", archived, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this archived', edit_archived_path(archived), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
